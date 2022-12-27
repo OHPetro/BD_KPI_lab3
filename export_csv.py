@@ -15,6 +15,9 @@ exportSCV = 'export_{}_.csv'
 
 TABLES = [
     'genres',
+    'genre_anime',
+    'user_',
+    'user_rating'
 ]
 
 conn = psycopg2.connect(user=username, password=password, dbname=database, host=host, port=port)
