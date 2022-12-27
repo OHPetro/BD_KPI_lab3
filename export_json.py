@@ -12,7 +12,10 @@ host = 'localhost'
 port = '5433'
 
 TABLES = [
-    'anime',
+    'genres',
+    'genre_anime',
+    'user_',
+    'user_rating'
 ]
 
 conn = psycopg2.connect(user=username, password=password, dbname=database, host=host, port=port)
@@ -35,6 +38,4 @@ with open("anime.json", 'w') as outf:
     json.dump(ar, outf, default = str)
 
 
-print("Export done!")     
-
-
+print("Export done!")   
